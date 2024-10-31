@@ -57,7 +57,11 @@
       },
       "configurations": {
         "development": {
-          "buildTarget": "host:build:development"
+          "buildTarget": "host:build:development",
+          "devRemotes": [
+            "remote1",
+            "remote2"
+          ]
         },
         "production": {
           "buildTarget": "host:build:production",

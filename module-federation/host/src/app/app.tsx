@@ -8,7 +8,7 @@ import { loadRemoteModule } from '@nx/react/mf';
 
 const Remote1 = React.lazy(() => loadRemoteModule('remote1', './Module'));
 
-const Remote2 = React.lazy(() => loadRemoteModule('remote2', './Module'));
+const Remote2 = React.lazy(() => import('remote2/Module'));
 
 export function App() {
   return (
